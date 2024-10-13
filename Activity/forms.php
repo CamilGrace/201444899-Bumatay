@@ -6,7 +6,7 @@
     <title>PHP Forms</title>
 </head>
 <body>
-    <h1>PHP Forms</h1>
+    <h2>PHP Forms</h2>
     <form action="forms.php" method="post">
         <label for="firstname">Enter your First Name:</label>
         <br>
@@ -35,9 +35,9 @@
             $age=htmlspecialchars($_POST["edad"]);
 
             echo "<h3>Your Inputs:</h3><br>";
-            echo "First Name: ".$name."<br>";
-            echo "Last Name: ".$lastname."<br>";
-            echo "Age: ".$age."<br>";
+            echo "<b>First Name:</b> ".$name."<br>";
+            echo "<b>Last Name:</b> ".$lastname."<br>";
+            echo "<b>Age:/b ".$age."<br>";
         }
     ?>
 </body>
