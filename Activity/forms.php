@@ -32,11 +32,11 @@
             $lastname=htmlspecialchars($_POST["lname"]);
             $age=htmlspecialchars($_POST["edad"]);
 
-            echo "<h3>Your Inputs:<h3><br>";
+            echo "<h3>Your Inputs:</h3><br>";
             echo "First Name: ".$name."<br>";
             echo "Last Name: ".$lastname."<br>";
             echo "Age: ".$age."<br>";
-        };
+        }
     ?>
 </body>
 </html>
