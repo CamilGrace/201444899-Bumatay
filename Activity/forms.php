@@ -6,6 +6,7 @@
     <title>PHP Forms</title>
 </head>
 <body>
+    <h1>PHP Forms</h1>
     <form action="forms.php" method="post">
         <label for="firstname">Enter your First Name:</label>
         <br>
@@ -25,6 +26,7 @@
         <input type="submit" value="Submit">
     </form>
 
+    <a href="search.php"><h3>Search Books</h3></a>
 
     <?php
         if ($_SERVER['REQUEST_METHOD'] == "POST"){

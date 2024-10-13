@@ -36,7 +36,7 @@
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
-                echo "<h2>Search Results:</h2>";
+                echo "<h3>Search Results:</h3>";
                 echo "<ul>";
                 
                 while ($row = $result->fetch_assoc()) {
