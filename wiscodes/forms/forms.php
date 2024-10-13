@@ -8,21 +8,27 @@
 <body>
     <form method="post" action ="/forms/forms.php ">
 
-        <label for="name">Enter Your First Name:</label><br>
-                <input type="text" id "name" name="name">
-                <br>
+        <label for="name">Enter Your First Name:</label>
+        <br>
+        <input type="text" id "name" name="name">
+        <br>
 
-                <label for="lastname">Enter Your Last Name:</label><br>
-
-                <input type="text" id="lastname" name="lastname">              
-                <br>           <label for="age">Enter your Age:</label><br>
-                <input type="number" id="age" name="edad">
-                <br>
-                <br>
-                <input type="submit" value"Submit>
+        <label for="lastname">Enter Your Last Name:</label>
+        <br>
+        <input type="text" id="lastname" name="lastname">              
+        <br>           
+        
+        <label for="age">Enter your Age:</label>
+        <br>
+        <input type="number" id="age" name="edad">
+        
+        <br>
+        <br>
+        <input type="submit" value"Submit>
     
     
-        </form>
+    </form>
+    
     <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST"  ){
             $name=htmlspecialchars($_POST['name']);
