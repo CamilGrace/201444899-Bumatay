@@ -25,9 +25,7 @@
         
         <input type="submit" value="Submit">
     </form>
-
-    <a href="search.php"><h3>Search Books</h3></a>
-
+    
     <?php
         if ($_SERVER['REQUEST_METHOD'] == "POST"){
             $name=htmlspecialchars($_POST["fname"]);
@@ -35,10 +33,12 @@
             $age=htmlspecialchars($_POST["edad"]);
 
             echo "<h3>Your Inputs:</h3><br>";
-            echo "<b>First Name:</b> ".$name."<br>";
-            echo "<b>Last Name:</b> ".$lastname."<br>";
-            echo "<b>Age:/b ".$age."<br>";
+            echo "<b>First Name:</b> ".$name."<br><br>";
+            echo "<b>Last Name:</b> ".$lastname."<br><br>";
+            echo "<b>Age:</b> ".$age."<br><br>";
         }
     ?>
+    
+    <a href="search.php"><h3>Search Books</h3></a>
 </body>
 </html>
