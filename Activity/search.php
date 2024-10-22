@@ -21,12 +21,12 @@
         if (isset($_GET['query'])) {
             $searchQuery = htmlspecialchars($_GET['query']);
 
-            $servername = "localhost";
+            $servername = "localhost:3306";
             $username = "camil";
             $password = "camilgrace";
             $dbname = "search_db";
 
-            $conn = new mysqli('localhost', 'camil', 'camilgrace', 'search_db');
+            $conn = new mysqli($servername, $username, $password, $dbname);
 
             if ($conn->connect_error) {
                 die("Connection failed: ". $conn->connect_error);
