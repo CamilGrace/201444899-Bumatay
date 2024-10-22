@@ -26,7 +26,7 @@
             $password = "camilgrace";
             $dbname = "search_db";
 
-            $conn = new mysqli($servername, $username, $password, $dbname);
+            $conn = new mysqli('localhost', 'camil', 'camilgrace', 'search_db');
 
             if ($conn->connect_error) {
                 die("Connection failed: ". $conn->connect_error);
