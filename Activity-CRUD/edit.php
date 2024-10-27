@@ -60,7 +60,7 @@
 <body>
     <h2>Edit Student Details</h2>
 
-    <form method="post" action="add.php">
+    <form method="post" action="edit.php">
         <input type="hidden" name="id" value="<?php echo $id; ?>">
         Name: <input type="text" name="name" value="<?php echo $name; ?>"><br><br>
         Age: <input type="text" name="age" value="<?php echo $age; ?>"><br><br>
