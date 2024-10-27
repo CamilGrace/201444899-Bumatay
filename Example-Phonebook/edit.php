@@ -49,8 +49,9 @@
     <h2>Edit Contact</h2>
 
     <form method="post" action="edit.php">
-        Name: <input type="text" name="name"><br><br>
-        Phone: <input type="text" name="phone"><br><br>
+        <input type="hidden" name="id" value="<?php echo $id; ?>">
+        Name: <input type="text" name="name" value="<?php echo $name; ?>"><br><br>
+        Phone: <input type="text" name="phone" value="<?php echo $phone; ?>"><br><br>
         <input type="submit" value="Update Contact">
 
     </form>
