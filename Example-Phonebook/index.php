@@ -29,7 +29,7 @@
                     echo "<tr>";
                     echo "<td>" . $row['name'] . "</td>";
                     echo "<td>" . $row['phone'] . "</td>";
-                    echo "<td>Delete</td>";
+                    echo "<td><a href='delete.php?id=".$row['id'] ."'>Delete</a></td>";
                     echo "</tr>";
                 }
             }else{
@@ -37,5 +37,6 @@
             }
         ?>
     </table>
+    <a href="add.php">Add New Contacts</a>
 </body>
 </html>
