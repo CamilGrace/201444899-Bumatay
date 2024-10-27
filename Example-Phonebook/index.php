@@ -1,3 +1,13 @@
+<?php
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+    include "db.php";
+
+    $sql="SELECT * FROM contacts";
+    $result=$conn->query($sql);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +16,6 @@
     <title>Phonebook</title>
 </head>
 <body>
-    <?php
-    include "db.php";
-
-    $sql="Select * from contacts";
-    $result=$conn->query($sql);
-
-    ?>
     <h2>Phonebook</h2>
     <table border="1">
         <tr>
@@ -24,9 +27,10 @@
             if($result->num_rows > 0){
                 while($row=$result->fetch_assoc()){
                     echo "<tr>";
-                    echo "<td>" . $row['name'] . "</td";
-                    echo "<td>" . $row['phone'] . "</td";
-                    echo "<td>Delete</td";
+                    echo "<td>" . $row['name'] . "</td>";
+                    echo "<td>" . $row['phone'] . "</td>";
+                    echo "<td>Delete</td>";
+                    echo "</tr>";
                 }
             }else{
                 echo "<tr><td colspan='3'>No Contacts</td></tr>";
