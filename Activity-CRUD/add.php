@@ -42,9 +42,9 @@
         Age: <input type="text" name="age"><br><br>
         Phone: <input type="text" name="phone"><br><br>
         Email: <input type="text" name="email"><br><br>
-        Degree_prog: <input type="text" name="degree_prog"><br><br>
+        Degree Program: <input type="text" name="degree_prog"><br><br>
         Major: <input type="text" name="major"><br><br>
-        Student_year: <input type="text" name="student_year"><br><br>
+        Student Year: <input type="text" name="student_year"><br><br>
         <input type="submit" value="Add Student"><br><br>
     </form>
     <a href="index.php">Back to List of Students</a>

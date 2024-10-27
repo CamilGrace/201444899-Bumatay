@@ -69,7 +69,7 @@
         Degree_prog: <input type="text" name="degree_prog" value="<?php echo $degree_prog; ?>"><br><br>
         Major: <input type="text" name="major" value="<?php echo $major; ?>"><br><br>
         Student_year: <input type="text" name="student_year" value="<?php echo $student_year; ?>"><br><br>
-        <input type="submit" value="Add Student"><br><br>
+        <input type="submit" value="Update Student Details"><br><br>
     </form>
     <a href="index.php">Back to List of Students</a>
 </body>
